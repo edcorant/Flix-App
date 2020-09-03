@@ -64,5 +64,19 @@ class Movies_View_Controller: UIViewController, UITableViewDelegate, UITableView
         
         return cell
     }
-
+    
+    /*
+     the two functions below are used to set the status bar elements, such as time and battery status,
+     to a bright white color in order to better contrast with the dark navigation bar.
+     
+     referenced from: https://www.ioscreator.com/tutorials/change-color-status-bar-ios-tutorial
+     */
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        navigationController?.navigationBar.barStyle = .black
+    }
 }
