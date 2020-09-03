@@ -13,6 +13,7 @@
 		E91990F524FEF31C0098A25A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E91990F424FEF31C0098A25A /* Assets.xcassets */; };
 		E91990F824FEF31C0098A25A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E91990F624FEF31C0098A25A /* LaunchScreen.storyboard */; };
 		E919910024FEF6FE0098A25A /* Movies_View_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91990FF24FEF6FE0098A25A /* Movies_View_Controller.swift */; };
+		E9C502C0250144C50023FB2C /* Movie_Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C502BF250144C50023FB2C /* Movie_Cell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E91990F724FEF31C0098A25A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E91990F924FEF31C0098A25A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E91990FF24FEF6FE0098A25A /* Movies_View_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies_View_Controller.swift; sourceTree = "<group>"; };
+		E9C502BF250144C50023FB2C /* Movie_Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie_Cell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				E91990EB24FEF3160098A25A /* AppDelegate.swift */,
 				E91990ED24FEF3160098A25A /* SceneDelegate.swift */,
 				E91990FF24FEF6FE0098A25A /* Movies_View_Controller.swift */,
+				E9C502BF250144C50023FB2C /* Movie_Cell.swift */,
 				E91990F124FEF3160098A25A /* Main.storyboard */,
 				E91990F424FEF31C0098A25A /* Assets.xcassets */,
 				E91990F624FEF31C0098A25A /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				E91990EC24FEF3160098A25A /* AppDelegate.swift in Sources */,
 				E91990EE24FEF3160098A25A /* SceneDelegate.swift in Sources */,
+				E9C502C0250144C50023FB2C /* Movie_Cell.swift in Sources */,
 				E919910024FEF6FE0098A25A /* Movies_View_Controller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
