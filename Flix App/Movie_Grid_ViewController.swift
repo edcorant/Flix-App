@@ -75,6 +75,19 @@ class Movie_Grid_ViewController: UIViewController, UICollectionViewDataSource, U
      }
      */
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let cell = sender as! UICollectionViewCell
+        let indexPath = collection.indexPath(for: cell)!
+        let movie = movies[indexPath.row]
+        
+        let details_vc = segue.destination as! Movie_Details_ViewController
+        details_vc.movie = movie
+        
+        // deselect selected cell
+        collection.deselectItem(at: indexPath, animated: true)
+    }
+    
     // MARK: - Miscellaneous
     
     /*
