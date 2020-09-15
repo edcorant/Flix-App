@@ -18,7 +18,7 @@ class Movies_View_Controller: UIViewController, UITableViewDelegate, UITableView
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         
         table_view.delegate = self
@@ -41,7 +41,6 @@ class Movies_View_Controller: UIViewController, UITableViewDelegate, UITableView
               
             // TODO: Reload your table view data
             self.table_view.reloadData()
-            
            }
         }
         task.resume()
@@ -60,10 +59,32 @@ class Movies_View_Controller: UIViewController, UITableViewDelegate, UITableView
         
         cell.title_label.text = movie["title"] as? String
         cell.synopsis_label.text = movie["overview"] as? String
-        cell.movie_art.af_setImage(withURL: movie_art_url!)
+        cell.movie_art.af.setImage(withURL: movie_art_url!)
         
         return cell
     }
+    
+    // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        // Find the selected movie
+        
+        // cast sender as UITableViewCell, store in variable 'cell'
+        let cell = sender as! UITableViewCell
+        let indexPath = table_view.indexPath(for: cell)!
+        let movie = movies[indexPath.row]
+        
+        // Pass the selected movie to the details view controller
+        
+        let details_view_controller = segue.destination as! Movie_Details_ViewController
+        details_view_controller.movie = movie
+        
+        // deselect selected cell
+        table_view.deselectRow(at: indexPath, animated: true)
+    }
+    
+    // MARK: - Miscellaneous
     
     /*
      the two functions below are used to set the status bar elements, such as time and battery status,
