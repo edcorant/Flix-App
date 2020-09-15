@@ -20,7 +20,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 <img src="http://g.recordit.co/tUDCjTWTmn.gif" width=250><br>
 
 ### Notes
-Describe any challenges encountered while building the app.
+I ran into a mysterious problem that caused my app to crash when I was very close to completion. I contacted the TAs on Slack and received help remakably fast (within, maybe 3 minutes). It turned out I had misplaced one of my IBOutlet connections. Other than that, the work has corresponded with the expected level of difficulty.
 
 ## Flix Part 1
 
